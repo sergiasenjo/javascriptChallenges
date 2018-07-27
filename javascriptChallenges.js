@@ -49,3 +49,13 @@ function simpleAdding(num) {
     return (num === 0) ? 0 : (num < 0) ? num + simpleAdding(num + 1) : num + simpleAdding(num - 1);
 }
 console.log(simpleAdding(4));
+
+/**
+ * Challenge 6
+ * Using the JavaScript language, have the function LetterCapitalize(str) take the str parameter being passed and capitalize the first letter of each word. Words will be separated by only one space.
+ * @param str
+ */
+function letterCapitalize(str) {
+    return str.replace(/\b[a-z]/gi, (char) => char.toUpperCase());
+}
+console.log(letterCapitalize('hello world'));
