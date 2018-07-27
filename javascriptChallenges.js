@@ -18,3 +18,13 @@ function firstFactorial(num) {
     return (num < 0) ? num = 'Factorial is defined only for non-negative integer numbers' : (num === 0) ? 1 : num * firstFactorial(num - 1);
 }
 console.log(firstFactorial(8));
+
+/**
+ * Challenge 3
+ * Using the JavaScript language, have the function FirstReverse(str) take the str parameter being passed and return the string in reversed order. For example: if the input string is "Hello World and Coders" then your program should return the string sredoC dna dlroW olleH.
+ * @param str
+ */
+function firstReverse(str) {
+    return str.split('').reverse().join('');
+}
+console.log(firstReverse('Hello World and Coders'));
