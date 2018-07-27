@@ -39,3 +39,13 @@ function letterChanges(str) {
     return converted.replace(/a|e|i|o|u/gi, (vowel) => vowel.toUpperCase());
 }
 console.log(letterChanges('fun times!'));
+
+/**
+ * Challenge 5
+ * Using the JavaScript language, have the function SimpleAdding(num) add up all the numbers from 1 to num. For example: if the input is 4 then your program should return 10 because 1 + 2 + 3 + 4 = 10. For the test cases, the parameter num will be any number from 1 to 1000.
+ * @param num
+ */
+function simpleAdding(num) {
+    return (num === 0) ? 0 : (num < 0) ? num + simpleAdding(num + 1) : num + simpleAdding(num - 1);
+}
+console.log(simpleAdding(4));
