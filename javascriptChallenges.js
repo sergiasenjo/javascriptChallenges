@@ -59,3 +59,27 @@ function letterCapitalize(str) {
     return str.replace(/\b[a-z]/gi, (char) => char.toUpperCase());
 }
 console.log(letterCapitalize('hello world'));
+
+/**
+ * TODO
+ * Challenge 7
+ * Using the JavaScript language, have the function SimpleSymbols(str) take the str parameter being passed and determine if it is an acceptable sequence by either returning the string true or false. The str parameter will be composed of + and = symbols with several letters between them (ie. ++d+===+c++==a) and for the string to be true each letter must be surrounded by a + symbol. So the string to the left would be false. The string will not be empty and will have at least one letter.
+ * @param str
+ */
+function simpleSymbols(str) {
+    return str;
+}
+console.log(simpleSymbols('+d+=3=+s+'));
+
+/**
+ * Challenge 8
+ * Using the JavaScript language, have the function CheckNums(num1,num2) take both parameters being passed and return the string true if num2 is greater than num1, otherwise return the string false. If the parameter values are equal to each other then return the string -1.
+ * @param num1
+ * @param num2
+ */
+function checkNums(num1, num2) {
+    return (num2 > num1) ? true : (num2 === num1) ? -1 : false;
+}
+console.log(checkNums(1, 2));
+console.log(checkNums(2, 2));
+console.log(checkNums(3, 2));
