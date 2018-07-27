@@ -15,6 +15,6 @@ console.log(longestWord('I love%&/&/& pizza'));
  * @param num
  */
 function firstFactorial(num) {
-    return (num === 0) ? 1 : num * firstFactorial(num - 1);
+    return (num < 0) ? num = 'Factorial is defined only for non-negative integer numbers' : (num === 0) ? 1 : num * firstFactorial(num - 1);
 }
 console.log(firstFactorial(8));
